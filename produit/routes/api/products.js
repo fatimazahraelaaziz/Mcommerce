@@ -15,7 +15,7 @@ router.get('/', async (req, res) => {
   
 router.get('/:id', async (req, res) => {
   try {
-    const product = await Item.findById(req.params.id, 'titre image prix description');
+    const product = await Item.findById(req.params.id, 'image title prix description');
     if (!product) {
       return res.status(404).json({ error: 'Produit non trouvé.' });
     }

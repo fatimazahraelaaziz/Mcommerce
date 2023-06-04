@@ -21,6 +21,14 @@ const ItemSchema = new Schema({
     prix:{
         type: Number,
         required: true
+    },
+    category: {
+        type: String,
+        required: false
+    },
+    rating: {
+        type: Object,
+        required: false
     }
 });
 

@@ -23,7 +23,7 @@ async function importData() {
 
       // Créer un tableau de promesses pour chaque document à insérer dans le lot
       const batchPromises = batch.map(async (product) => {
-        const { id, title, description, image, price } = product;
+        const { id, title, description, image, price, category, rating} = product;
 
         // Créer un nouvel objet Item en utilisant les données du produit
         const newItem = new Item({
@@ -31,7 +31,9 @@ async function importData() {
           titre: title,
           description,
           image,
-          prix: price
+          prix: price,
+          category,
+          rating
         });
 
         // Sauvegarder le nouvel objet Item dans la base de données

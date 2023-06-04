@@ -3,7 +3,7 @@ const Schema = mongoose.Schema;
 
 const PaiementSchema = new Schema({
   commandeId: {
-    type: Number,
+    type: String,
     required: true
   },
   datePaiement: {

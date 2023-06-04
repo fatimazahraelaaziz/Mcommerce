@@ -2,23 +2,35 @@ const express = require('express');
 const axios = require('axios');
 const router = express.Router();
 
+const Paiement = require('../../models/paiement');
 
-// Route pour effectuer un paiement
-router.post('/paiement', async (req, res) => {
+
+// Effectuer un paiement pour une commande
+router.post('/', async (req, res) => {
   try {
-    // Effectuer les opérations nécessaires pour le paiement
-    
-    const commandeId = req.body.commandeId; // Identifiant de la commande à marquer comme payée
-    
-    // Envoyer une requête au microservice "Commande" pour mettre à jour le statut de la commande
-    await axios.put(`http://localhost:5001/api/commandes/${commandeId}`, { statut: true });
-    
-    res.json({ message: 'Paiement effectué avec succès' });
+    const { commandeId, montant } = req.body; // Obtenir l'ID de la commande et le montant du corps de la requête
+
+    // Envoyer une requête au microservice commande pour marquer la commande comme payée
+    const response = await axios.put(`http://localhost:5001/api/commandes/${commandeId}/paiement`, {
+      montant,
+    });
+
+    if (response.status === 200) {
+      // Le paiement a réussi
+      res.json({ success: true, message: 'Le paiement a été effectué avec succès' });
+    } else {
+      // La mise à jour de la commande a échoué
+      res.json({ success: false, message: 'La mise à jour de la commande a échoué' });
+    }
   } catch (error) {
-    console.error('Erreur lors du paiement:', error);
-    res.status(500).json({ error: 'Erreur lors du paiement' });
+    console.error('Erreur lors du paiement de la commande:', error);
+    res.status(500).json({ error: 'Erreur lors du paiement de la commande' });
   }
 });
+
+
+
+
 
 
 // Obtenir tous les paiements
