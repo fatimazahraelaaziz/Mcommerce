@@ -1,4 +1,4 @@
-# ecommerce
+# Mcommerce
 
 L'objectif est de créer une solution complète et performante, permettant aux utilisateurs de naviguer et d'effectuer des
 transactions de manière fluide.
