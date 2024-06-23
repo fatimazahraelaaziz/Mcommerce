@@ -1,5 +1,4 @@
 # Mcommerce - Application Microservices 
-## Pour plus de details: voir le fichier Description_Mcommerce.pdf ci-dessus.
 
 ## Description du Projet
 
@@ -63,3 +62,4 @@ https://gitlab.com/Laazizz/ecommerce
 
 https://gitlab.com/maryam2001/kubernetes
 
+## Pour plus de details: voir le fichier Description_Mcommerce.pdf ci-dessus.
