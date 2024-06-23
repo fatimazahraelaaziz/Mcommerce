@@ -42,13 +42,7 @@ Voir la figure ci-après pour avoir une idée sur les fonctionnalités proposée
     - Utiliser ArgoCD pour détecter les changements dans le repo GitLab contenant les fichiers YAML de Kubernetes.
     - Étendre le CI pipeline de GitLab pour déployer chaque microservice mis à jour dans le cluster local de Kubernetes.
 
-## Annexes
-
-- **Diagramme des fonctionnalités et des communications** : [Lien vers le diagramme]
-- **Fichiers YAML de Kubernetes** : [Lien vers les fichiers YAML]
-- **Documentation complémentaire** : [Lien vers la documentation]
-
-## Auteur
+## Auteurs
 
 - **LAAZIZ Fatima Zahrae - TAMLALTI Maryam**
 - **Contact: laazizfatimazahrae@gmail.com - mtamlalti@gmail.com**
