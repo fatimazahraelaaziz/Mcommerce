@@ -1,4 +1,5 @@
-# Mcommerce - Application Microservices
+# Mcommerce - Application Microservices 
+# Pour plus de details: voir le rapport 
 
 ## Description du Projet
 
@@ -58,7 +59,7 @@ Voir la figure ci-après pour avoir une idée sur les fonctionnalités proposée
 https://gitlab.com/Laazizz/ecommerce
 
 
-## Le repo contenant les fichier YAML
+## Le dépôt contenant les fichier YAML
 
 https://gitlab.com/maryam2001/kubernetes
 
