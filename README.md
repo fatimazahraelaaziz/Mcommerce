@@ -50,13 +50,15 @@ Voir la figure ci-après pour avoir une idée sur les fonctionnalités proposée
 
 ## Auteur
 
-- **Votre Nom**
-- **Votre Contact (email, profil GitHub, etc.)**
+- **LAAZIZ Fatima Zahrae - TAMLALTI Maryam**
+- **Contact: laazizfatimazahrae@gmail.com - mtamlalti@gmail.com**
 
-## Licence
+## Le CI pipeline de gitlab 
 
-Ce projet est sous licence [Nom de la licence]. Voir le fichier [LICENSE](LICENSE) pour plus de détails.
+https://gitlab.com/Laazizz/ecommerce
 
 
+## Le repo contenant les fichier YAML
 
+https://gitlab.com/maryam2001/kubernetes
 
