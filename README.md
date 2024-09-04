@@ -10,7 +10,7 @@ Voir la figure ci-après pour avoir une idée sur les fonctionnalités proposée
 
 ## Fonctionnalités
 
-- Développement des services backend avec Node.js / Express et MongoDB pour tous les microservices frontend.
+- Développement des services backend avec Node.js / Express et MongoDB pour tous les microservices.
 - Développement du frontend sous forme de SPA avec la librairie React.
 - Création des fichiers Dockerfile pour l’ensemble des services et le frontend.
 - Automatisation du build, scans de sécurité, packaging et publication des images Docker avec GitLab CI.
